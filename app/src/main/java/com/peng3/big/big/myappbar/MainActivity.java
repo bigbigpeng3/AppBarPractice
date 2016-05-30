@@ -23,9 +23,5 @@ public class MainActivity extends AppCompatActivity {
 
         collapsingToolbar.setTitle("Hello World");
 
-
-
-
-
     }
 }
