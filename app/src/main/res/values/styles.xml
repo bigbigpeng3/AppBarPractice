@@ -21,7 +21,6 @@
     <style name="MyAppTheme" parent="AppTheme">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
-
     </style>
 
     <style name="FullAppTheme" parent="AppTheme">
