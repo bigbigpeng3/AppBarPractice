@@ -14,6 +14,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
     private Button button4;
     private Button button5;
     private Button buttonTest;
+    private Button buttonSystem;
 
     private boolean isFull = false ;
 
@@ -28,6 +29,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         button4 = (Button) findViewById(R.id.btn_image4);
         button5 = (Button) findViewById(R.id.btn_image5);
         buttonTest = (Button) findViewById(R.id.btn_test);
+        buttonSystem = (Button) findViewById(R.id.btn_systembar);
 
 
         button1.setOnClickListener(this);
@@ -36,6 +38,7 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
         button4.setOnClickListener(this);
         button5.setOnClickListener(this);
         buttonTest.setOnClickListener(this);
+        buttonSystem.setOnClickListener(this);
 
 
     }
@@ -62,10 +65,13 @@ public class HomeActivity extends AppCompatActivity implements View.OnClickListe
 
             Intent intent = new Intent(HomeActivity.this, WebViewNoNestedActivity.class);
             startActivity(intent);
+        }else if (buttonSystem  == view){
+
+            Intent intent = new Intent(HomeActivity.this, SystembarActivity.class);
+            startActivity(intent);
+
         }
+
     }
-
-
-
 
 }

@@ -51,7 +51,7 @@ public class MyWebView extends WebView {
 
 
         //这是X轴
-        if (t - oldt > 0){
+        if (t - oldt > 10){
             Log.i("TAG1", "t - oldt > 0 ....." );
             listener.onDown();
         } else {
@@ -67,6 +67,7 @@ public class MyWebView extends WebView {
     }
 
     public interface OnMyScrollChangeListener {
+
         public void onPageEnd(int l, int t, int oldl, int oldt);
         public void onPageTop(int l, int t, int oldl, int oldt);
         public void onScrollChanged(int l, int t, int oldl, int oldt);

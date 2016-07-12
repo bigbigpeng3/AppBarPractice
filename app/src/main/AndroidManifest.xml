@@ -9,81 +9,67 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".HomeActivity"
-                  android:theme="@style/AppTheme.NoActionBar"
-            >
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
-
 
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivity"
-
-                  android:theme="@style/AppTheme.NoActionBar"
-
-                  android:parentActivityName=".MainActivity"
-            >
-
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
-
-        <activity android:name=".Main2Activity"
-
-                  android:theme="@style/AppTheme.NoActionBar"
-
-                  android:parentActivityName=".MainActivity"
-            >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".MainActivity" />
+        <activity
+            android:name=".Main2Activity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
-
-        <activity android:name=".WebViewActivity"
-
-                  android:theme="@style/MyAppTheme"
-
-                  android:parentActivityName=".MainActivity"
-            >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".MainActivity" />
+        <activity
+            android:name=".WebViewActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MyAppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
-
-        <activity android:name=".WebViewFullScreenActivity"
-
-                  android:theme="@style/FullAppTheme"
-
-                  android:parentActivityName=".MainActivity"
-            >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".MainActivity" />
+        <activity
+            android:name=".WebViewFullScreenActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/FullAppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
-
-        <activity android:name=".WebViewFullWithToolBarActivity"
-
-                  android:theme="@style/MyAppThemeWithTool"
-
-                  android:parentActivityName=".MainActivity"
-            >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".MainActivity" />
+        <activity
+            android:name=".WebViewFullWithToolBarActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MyAppThemeWithTool">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
-
-
-        <activity android:name=".WebViewNoNestedActivity"
-
-                  android:theme="@style/MyAppTheme"
-
-                  android:parentActivityName=".MainActivity"
-            >
-            <meta-data android:name="android.support.PARENT_ACTIVITY"
-                       android:value=".MainActivity" />
+        <activity
+            android:name=".WebViewNoNestedActivity"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/MyAppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity"/>
         </activity>
-
-
+        <activity android:name=".SystembarActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
     </application>
 
 </manifest>
